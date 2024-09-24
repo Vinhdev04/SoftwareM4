@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  margin: 0;
+}
+
+a,
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --primary-color: #a65116;
+  --secondary-color: #efefef;
+  --text-color: #232323;
+  --desc-color: #777777;
+  --color-one: #ff8484;
+  --color-two: #f7d9c4;
+  --color-three: #5b6c8e;
+  --font-family: "DM Sans", sans-serif;
+  --background-one: #efefef;
+  --box-shadow: 0 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.1);
+  --background-two: #dce8eb;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.active {
+  border: 1px solid rgba(226, 230, 7, 0.918);
+}
+
+@keyframes moveItem {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.act-now {
+  color: rgba(189, 25, 25, 0.685);
+  display: block;
+  font-weight: bold;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btns {
+  color: var(--text-color);
+  background: #fff;
+  border: 2px solid #fff;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
